@@ -1,0 +1,2 @@
+# SemanticSpotter
+Semantic Spotter
