@@ -52,20 +52,42 @@ Implement both LangChain and LlamaIndex pipelines, evaluate them, and compare ac
   - LlamaIndex → quick prototyping, lightweight
 - Auto-generate evaluation QA dataset from document section headers
 - Benchmark on accuracy, latency, provenance
+- Install dependencies
+- Configure API Key
+
+**Run on Colab**
+Open SemanticSpotter_RajaRaviSekar.ipynb in Google Colab.
+Upload the policy PDF (default: Principal-Sample-Life-Insurance-Policy.pdf).
+*Run all cells to:*
+- Extract text & section headers
+- Build LangChain & LlamaIndex pipelines
+- Auto-generate QA dataset
+- Evaluate & visualize results
 
 ## Conclusions
 - Both systems achieved equal accuracy (75%)
-- LangChain was faster (~1144 ms vs ~1281 ms)
+- LangChain was faster (~1093 ms vs ~1597 ms)
 - Both produced full provenance (100%), which is critical for regulated domains
 
 | System      | Accuracy (%) | Latency (ms) | Provenance (%) |
 |-------------|--------------|--------------|----------------|
-| LangChain   | 75.0         | 1144.6       | 100.0          |
-| LlamaIndex  | 75.0         | 1281.2       | 100.0          |
+| LangChain   | 75.0         | 1092.9       | 100.0          |
+| LlamaIndex  | 75.0         | 1596.6       | 100.0          |
 
 - Both frameworks are capable of answering insurance policy queries
 - LangChain outperforms LlamaIndex in latency while maintaining accuracy and provenance
 - For production insurance Q&A systems, LangChain is the recommended choice
+
+**Visualizations**
+Generated with matplotlib in Colab:
+- Accuracy Comparison
+- Latency Comparison
+- Provenance Comparison
+
+**Recommendations**
+- Use LangChain for enterprise insurance Q&A (better modularity + faster response)
+- Use LlamaIndex for rapid prototyping and research experiments
+- Extend evaluation with real-world FAQs for production readiness
 
 ## Acknowledgements
 I want to credit upGrad for the Master of Science in Machine Learning and Artificial Intelligence (AI/ML) degree alongside IIIT-Bangalore, and LJMU, UK
