@@ -1,5 +1,5 @@
 # Semantic Spotter - Retrieval-Augmented Generation case study for MS - AI/ML
-> 📑 RAG System for Insurance Policies — LangChain vs LlamaIndex
+> RAG System for Insurance Policies — LangChain vs LlamaIndex
 
 ## Table of Contents
 * [General Info](#general-information)
